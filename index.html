@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <title>HTML Form & Validation</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Fajar Rizky Widodo">
+        <meta name="description" content="A webpage containing 
+        a form for signing up and validation of the form. 
+        Written in HTML."> 
+        <meta name="viewport" content="width=device-width, 
+        initial-scale=1.0">
+    </head>
+    <body>
+        <h2>Daftar</h2>
+        <form action="results.html" method="GET" 
+        enctype="multipart/form-data">
+            <div>
+                <label for="name">Nama</label>
+                <input 
+                    name="name" 
+                    id="name" 
+                    type="text" 
+                    maxlength="50">
+            </div>
+            <div>
+                <label for="email">Email UGM</label>
+                <input 
+                    name="email"
+                    id="email" 
+                    type="email" 
+                    maxlength="50">
+            </div>
+            <div>
+                <label for="password">Kata Sandi</label>
+                <input 
+                    name="password"
+                    id="password" 
+                    type="password" 
+                    maxlength="50" 
+                    minlength="6">
+            </div>
+            <div>
+                <label for="age">Umur</label>
+                <input 
+                    name="age"
+                    id="age"
+                    type="number"
+                    min="0"
+                    max="200"
+                    step=5>
+            </div>
+            <div>
+                <label for="birthdate">Tanggal Lahir</label>
+                <input 
+                    name="birthdate"
+                    id="birthdate"
+                    type="date"
+                    min="1800-01-01">
+            </div>
+            <br>
+            <div>
+                Makanan favorit:
+                <div>
+                    <label for="nasiPadang">Nasi Padang</label>
+                    <input
+                        name="makananFavorit"
+                        id="nasiPadang"
+                        type="checkbox"
+                        value="nasiPadang">
+                </div>
+                <div>
+                    <label for="bakso">Bakso</label>
+                    <input
+                        name="makananFavorit"
+                        id="bakso"
+                        type="checkbox"
+                        value="bakso">
+                </div>
+            </div>
+            <br>
+            <div>
+                Kos di:
+                    <div>
+                        <label for="pogung">Pogung</label>
+                        <input 
+                            name="tempatKos"
+                            id="pogung"
+                            type="radio"
+                            value="pogung">
+                    </div>
+                    <div>
+                        <label for="condongCatur">Condong Catur</label>
+                        <input 
+                            name="tempatKos"
+                            id="condongCatur"
+                            type="radio"
+                            value="condongCatur">
+                    </div>
+            </div>
+            <br>
+            <div>
+                <label for="color">Pilih warna favorit</label>
+                <input
+                    name="color"
+                    id="color"
+                    type="color"> 
+            </div>
+            <br>
+            <div>
+                <label></label>
+                <input
+                    name="hiddenInput"
+                    type="hidden"
+                    value="something">
+            </div>
+            <!-- <div>
+                <label for="photoProfile">Photo Profile</label>
+                <input
+                    name="photoProfile"
+                    id="photoProfile"
+                    type="image"
+                    src="./images/pemandangan.jpg"
+                    width="100em">
+            </div> -->
+            <div>
+                <input
+                    name="siteSearch" 
+                    type="search">
+                <button>Cari</button>
+            </div>
+            <br>
+            <div>
+                <label for="siteUrl">URL</label>
+                <input
+                    name="siteUrl"
+                    id="siteUrl" 
+                    type="url"> 
+            </div>
+            <br>
+            <div>
+                <label for="profilePhoto">Unggah Foto Profil</label>
+                <input
+                    name="profilePhoto"
+                    id="profilePhoto"
+                    type="file">
+            </div>
+            <br>
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+        </form>
+        <!-- <form action="results.html" method="GET">
+            <table>
+                <tr>
+                    <td>Nama</td>
+                    <td>: </td>
+                    <td> <input 
+                        name="name" 
+                        id="name" 
+                        type="text" 
+                        maxlength="50" 
+                        required> 
+                    </td>
+                </tr>
+            </table>
+            <button type="submit">Submit</button>
+        </form> -->
+    </body>
+</html>

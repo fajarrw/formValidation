@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <title>results</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Fajar Rizky Widodo">
+        <meta name="description" content="A webpage containing form content submitted by user. Written in HTML.">
+        <meta name="description" content="A webpage containing 
+        a form for signing up and validation of the form. 
+        Written in HTML."> 
+        <meta name="viewport" content="width=device-width, 
+        initial-scale=1.0">
+    </head>
+    <body>
+        <div id="results"></div>
+        <a href="/">Back to Form</a>
+        <script>
+            const resultList = document.getElementById('results')
+            new URLSearchParams(window.location.search).forEach((value,name) => {
+                resultList.append(`${name}: ${value}`)
+                resultList.append(document.createElement('br'))
+            })                
+        </script>
+    </body>
+</html>
